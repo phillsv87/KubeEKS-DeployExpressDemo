@@ -4,7 +4,8 @@
   "description": "A demo deployment using KubeEKS",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
+    "start": "node src/index.js",
+    "build": "echo 'Dishes are done'",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Scott Vance",

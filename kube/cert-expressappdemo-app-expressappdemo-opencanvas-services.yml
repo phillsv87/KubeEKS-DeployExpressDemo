@@ -1,0 +1,19 @@
+apiVersion: cert-manager.io/v1alpha2
+kind: Certificate
+metadata:
+  name: cert-app-expressappdemo-opencanvas-services
+  namespace: expressappdemo
+spec:
+  secretName: cert-app-expressappdemo-opencanvas-services
+  dnsNames:
+  - app.expressappdemo.opencanvas.services
+  acme:
+    config:
+    - http01:
+        ingressClass: nginx
+      domains:
+      - app.expressappdemo.opencanvas.services
+  issuerRef:
+    name: letsencrypt-prod
+    namespace: letsencrypt
+    kind: ClusterIssuer
