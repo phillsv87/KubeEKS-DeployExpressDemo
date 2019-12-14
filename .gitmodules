@@ -1,0 +1,3 @@
+[submodule "kube/KubeEKS"]
+	path = kube/KubeEKS
+	url = https://github.com/phillsv87/KubeEKS.git
